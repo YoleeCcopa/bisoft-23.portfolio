@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 // COMPONENTS
 
@@ -16,7 +17,23 @@ import { navData } from './sidebar-data';
         RouterModule
     ],
     templateUrl: './sidebar.component.html',
-    styleUrl: './sidebar.component.scss'
+    styleUrl: './sidebar.component.scss',
+    animations: [
+        trigger('fadeInOut', [
+            transition(':enter', [
+                style({opacity: 0}),
+                animate('350ms',
+                    style({opacity: 1})
+                ),
+                transition(':leave', [
+                    style({opacity: 1}),
+                    animate('350ms',
+                        style({opacity: 0})
+                    )
+                ])
+            ])
+        ])
+    ]
 })
 export class SidebarComponent implements OnInit {
     @Output() onToggleSidenav: EventEmitter<SidenavToogle> = new EventEmitter();

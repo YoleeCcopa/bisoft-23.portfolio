@@ -8,8 +8,8 @@
 }
 
 .--body-md-screen {
-    width: calc(100% - var(--sidebar-min-width));
-    margin-left: var(--sidebar-min-width);
+    width: calc(100% - var(--sidebar-max-width));
+    margin-left: var(--sidebar-max-width);
 }
 
 main {
@@ -18,5 +18,4 @@ main {
     margin-top: var(--header-height);
     width: 100%;
     padding: 1rem;
-    transition: all 0.3s ease 0s;
 }

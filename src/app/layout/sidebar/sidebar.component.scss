@@ -37,7 +37,7 @@
 .--user-profile button:hover,
 .--user-profile button:focus {
     background-color: var(--color-beige);
-    color: var(--color-old-gold);
+    color: var(--color-midnight-green);
     border-radius: 50%;
     outline: none;
 }
@@ -162,12 +162,10 @@ nav li a:focus {
 /* SIDE MENU CONTENIDO - ESTILO COMPRIMIDO */
 
 @media screen and (max-width: 768px) {
-    .--compact-body {
-        margin-left: 0;
-    }
     .--extended-sidebar {
-        width: var(--sidebar-min-width);
-        left: -4.5rem;
-        visibility: hidden;
+        z-index: 500;
+    }
+    .--user-details {
+        min-width: 5rem;
     }
 }

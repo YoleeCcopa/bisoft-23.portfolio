@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+// CUSTOM COMPONENT
 import { LandingComponent } from './pages/landing/landing.component';
 import { ProyectsComponent } from './pages/proyects/proyects.component';
 import { MissionComponent } from './pages/mission/mission.component';
