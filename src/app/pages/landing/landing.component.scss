@@ -1,0 +1,135 @@
+.banner {
+    width: 100%;
+    background-color: var(--color-old-gold);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 1.5rem 1.5rem 20%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.banner-details {
+    text-align: right;
+    font-family: var(--font-domine);
+    width: 30rem;
+}
+
+.banner-details h2 {
+    font-size: 2rem;
+}
+
+.banner-details span {
+    font-size: 1.5rem;
+}
+
+.banner-details .sct-button {
+    margin-top: 2rem;
+}
+
+.banner-details .sct-button a {
+    padding: 0.6rem 1rem;
+    background-color: var(--color-beige);
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    color: var(--color-midnight-green);
+    transition: all 0.2s;
+}
+
+.banner-details .sct-button a.dark:focus,
+.banner-details .sct-button a:focus,
+.banner-details .sct-button a.dark:hover,
+.banner-details .sct-button a:hover {
+    background-color: var(--color-fire-opal);
+    color: var(--color-beige);
+    outline: none;
+}
+
+.banner-details .sct-button a.dark {
+    background-color: var(--color-midnight-green);
+    color: var(--color-beige);
+}
+
+.banner-img {
+    width: 20vw;
+    border-radius: 50%;
+    background-color: var(--color-midnight-green);
+    padding: 2vw;
+}
+
+.banner-img img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.div-proyects,
+.contact {
+    padding: 1.5rem;
+    background-color: rgba(206, 194, 56, 0.4);
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.div-proyects h3,
+.contact h3 {
+    font-family: var(--font-domine);
+    margin-bottom: 1rem;
+}
+
+.div-proyects .proyect-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.proyect-cards .card {
+    width: 30vw;
+    background-color: var(--color-beige);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.proyect-cards .card-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.proyect-cards .card-details i {
+    font-size: 3rem;
+}
+
+.proyect-cards .card-details .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    font-family: var(--font-domine);
+}
+
+.proyect-cards .card-details span {
+    font-size: 13px;
+}
+
+.proyect-cards .card-footer a {
+    transition: all 0.2s;
+    color: var(--color-fire-opal);
+    outline: none;
+}
+
+.proyect-cards .card-footer a:focus {
+    background-color: var(--color-midnight-green);
+    padding: 0.2rem 0.5rem;
+    color: var(--color-beige);
+    border-radius: 0.4rem;
+}
+
+.contact .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
+}
+
+.contact .card-container i {
+    margin-right: 0.5rem;
+}
