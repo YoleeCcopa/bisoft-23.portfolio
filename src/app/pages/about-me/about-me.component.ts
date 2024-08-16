@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 // COMPONENTS
 import { BiographyComponent } from '../../components/biography/biography.component';
+import { IdentyComponent } from '../../components/identy/identy.component';
+import { MissionVisionComponent } from '../../components/mission-vision/mission-vision.component';
 
 // INTERFACES
 
@@ -9,7 +11,9 @@ import { BiographyComponent } from '../../components/biography/biography.compone
   selector: 'app-about-me',
   standalone: true,
   imports: [
-    BiographyComponent
+    BiographyComponent,
+    IdentyComponent,
+    MissionVisionComponent
   ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'

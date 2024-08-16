@@ -1,0 +1,32 @@
+.mission-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.mission-card .card {
+    width: 48%;
+    padding: 1.5rem;
+    background-color: rgba(206, 194, 56, 0.4);
+    border-radius: 0.5rem;
+}
+
+.mission-card .card h3 {
+    font-family: var(--font-domine);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.mission-card .card .card-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-details p {
+    width: 80%;
+}
+
+.card-details i {
+    font-size: 5rem;
+}
