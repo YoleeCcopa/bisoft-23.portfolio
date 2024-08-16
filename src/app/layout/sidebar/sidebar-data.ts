@@ -2,21 +2,21 @@ export const navData = [
     {
         icon: 'tabler--home',
         label: 'inicio',
-        route: ''
+        routeLink: 'home'
     },
     {
         icon: 'tabler--user-scan',
         label: 'acerca de mi',
-        route: 'about-me'
+        routeLink: 'about-me'
     },
     {
         icon: 'tabler--code',
         label: 'proyectos',
-        route: 'proyect'
+        routeLink: 'proyect'
     },
     {
         icon: 'tabler--school',
         label: 'habilidades',
-        route: 'skill'
+        routeLink: 'skill'
     }
 ]

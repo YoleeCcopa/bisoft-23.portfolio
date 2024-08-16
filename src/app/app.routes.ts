@@ -8,11 +8,16 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 export const routes: Routes = [
     {
+        path: '', 
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
         path: 'about-me', 
         component: AboutMeComponent
     },
     {
-        path: '', 
+        path: 'home', 
         component: LandingComponent
     },
     {

@@ -13,7 +13,7 @@
     <nav class="--hide-scroll">
         <ul>
             <li routerLinkActive="active" *ngFor="let data of navData">
-                <a href="#" [routerLink]="data.route" [routerLinkActiveOptions]="{exact: true}">
+                <a href="#" [routerLink]="data.routeLink">
                     <i [class]="data.icon"></i>
                     <span *ngIf="isCollapsed">{{data.label}}</span>
                 </a>
