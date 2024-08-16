@@ -1,0 +1,30 @@
+header {
+    background-color: var(--color-dark-jungle-green);
+    color: var(--color-old-gold);
+    display: flex;
+    width: 100%;
+    height: var(--header-height);
+    top: 0;
+    /* fijar barra en la parte superior */
+    position: fixed;
+    /* sobrepone el header encima del contenido */
+    z-index: 300;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem 1rem 0.5rem;
+    font-family: var(--font-domine);
+}
+
+header span {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+
+/* SIDE MENU CONTENIDO - ESTILO COMPRIMIDO */
+
+@media screen and (max-width: 768px) {
+    header span {
+        font-size: 1.5rem;
+    }
+}

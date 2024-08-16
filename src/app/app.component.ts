@@ -1,13 +1,30 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// CUSTOM ELEMENTS
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { BodyComponent } from './layout/body/body.component';
+import { SidenavToogle } from './interfaces/layout-structure';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterModule,
+    SidebarComponent,
+    BodyComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'personal-portfolio';
+  isSidenavCollapsed = false;
+  screenWidth = 0;
+
+  onToggleSidenav(data: SidenavToogle): void {
+    this.isSidenavCollapsed = data.collapsed;
+    this.screenWidth = data.screenWidth
+  }
 }
