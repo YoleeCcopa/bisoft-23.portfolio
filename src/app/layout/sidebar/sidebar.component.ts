@@ -4,9 +4,9 @@ import { RouterModule } from '@angular/router';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 // COMPONENTS
+import { SidenavToogle } from '../../interfaces/layout-structure';
 
 // INTERFACES
-import { SidenavToogle } from '../../interfaces/layout-structure';
 import { navData } from './sidebar-data';
 
 @Component({

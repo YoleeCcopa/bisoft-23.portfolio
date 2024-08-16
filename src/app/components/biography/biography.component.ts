@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-biography',
+  selector: 'invok-biography',
   standalone: true,
   imports: [],
   templateUrl: './biography.component.html',

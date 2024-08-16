@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
 
+// COMPONENTS
+import { BiographyComponent } from '../../components/biography/biography.component';
+
+// INTERFACES
+
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [
+    BiographyComponent
+  ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
