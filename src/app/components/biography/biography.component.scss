@@ -1,0 +1,52 @@
+.bio-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.bio-story,
+.bio-img {
+    width: 50%;
+}
+
+.bio-story h2 {
+    font-family: var(--font-domine);
+    padding: 1rem 2rem;
+    background-color: rgba(206, 194, 56, 0.4);
+    color: var(--color-dark-jungle-green);
+    width: 10rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.bio-story .bio-cont {
+    padding: 2.5rem;
+    background-color: rgba(206, 194, 56, 0.4);
+    color: var(--color-dark-jungle-green);
+    width: calc(100% - 2rem);
+}
+
+.bio-img {
+    background-color: var(--color-midnight-green);
+    height: 35rem;
+}
+
+.bio-img img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+/* SIDE MENU CONTENIDO - ESTILO COMPRIMIDO */
+
+@media screen and (max-width: 768px) {
+    .bio-story,
+    .bio-img {
+        width: 100%;
+    }
+    .bio-img {
+        height: 20rem;
+        margin-bottom: 1rem;
+    }
+}
