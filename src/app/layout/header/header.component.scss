@@ -1,0 +1,49 @@
+header {
+    background-color: var(--color-dark-jungle-green);
+    color: var(--color-old-gold);
+    display: flex;
+    width: 100%;
+    height: var(--header-height);
+    top: 0;
+    /* fijar barra en la parte superior */
+    position: fixed;
+    /* sobrepone el header encima del contenido */
+    z-index: 300;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-family: var(--font-domine);
+}
+
+header button {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+header span {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+header button:hover,
+header button:focus {
+    background-color: var(--color-beige);
+    color: var(--color-old-gold);
+    border-radius: 50%;
+    outline: none;
+}
+
+
+/* SIDE MENU CONTENIDO - ESTILO COMPRIMIDO */
+
+@media screen and (max-width: 768px) {
+    header span {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,157 @@
+.--sidebar {
+    background-color: var(--color-beige);
+    top: 0;
+    left: 0;
+    width: var(--sidebar-min-width);
+    height: 100%;
+    position: fixed;
+    z-index: 300;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.--user-profile {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--color-dark-jungle-green);
+    color: var(--color-beige);
+    height: var(--header-height);
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-spectral);
+}
+
+.--user-avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.--user-avatar img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    background-color: var(--color-midnight-green);
+}
+
+.--user-details {
+    width: 100%;
+    text-transform: capitalize;
+    cursor: default;
+    min-width: 10rem;
+}
+
+.--user-details p {
+    font-size: 1.5rem;
+}
+
+.--user-details span {
+    font-size: 0.8rem;
+}
+
+nav {
+    height: 100%;
+    position: absolute;
+    /* implemerta scroll vertical */
+    overflow-y: auto;
+    width: 100%;
+    font-family: var(--font-barlow);
+}
+
+
+/* Ocultar scroll para chrome, safari, opera */
+
+.--hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Ocultar scroll para edge y otros navegadores */
+
+.--hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+nav li {
+    margin: 1rem 0.5rem 1rem 0.5rem
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+    color: var(--color-midnight-green);
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+
+nav li i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    min-width: 1.5rem;
+}
+
+nav li span {
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    min-width: 10rem;
+}
+
+
+/* #38cdfb */
+
+nav li.--current-page a {
+    background-color: var(--color-cadet-grey);
+    color: var(--color-dark-jungle-green);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+nav li a:hover,
+nav li a:focus {
+    background-color: var(--color-midnight-green);
+    color: var(--color-beige);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+
+/* Javascript */
+
+.--compact-body {
+    margin-left: var(--sidebar-max-width);
+}
+
+.--extended-sidebar {
+    width: var(--sidebar-max-width);
+}
+
+.--extended-sidebar li {
+    margin: 1rem 0.5rem 1rem 0;
+}
+
+.--extended-sidebar li a {
+    border-radius: 0 2rem 2rem 0;
+}
+
+.--extended-sidebar a i {
+    margin-left: 0.5rem;
+}
+
+
+/* SIDE MENU CONTENIDO - ESTILO COMPRIMIDO */
+
+@media screen and (max-width: 768px) {
+    .--compact-body {
+        margin-left: 0;
+    }
+    .--extended-sidebar {
+        width: var(--sidebar-min-width);
+        left: -4.5rem;
+        visibility: hidden;
+    }
+}
