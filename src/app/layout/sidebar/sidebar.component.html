@@ -1,17 +1,19 @@
 <section class="--sidebar" id="sidebar" [ngClass]="isCollapsed ? '--extended-sidebar': ''">
     <div class="--user-profile">
-        <div class="--user-avatar">
+        <div class="--user-avatar" *ngIf="isCollapsed">
             <img src="../../../assets/img/Tohu.png" alt="silver moth ilustration">
         </div>
         <div class="--user-details" *ngIf="isCollapsed">
             <p id="user_name">Yolee B. Ccopa Cc.</p>
-            <span id="user_role">portafolio</span>
         </div>
+        <button aria-label="toogle sidebar" id="btn_sidebar" (click)="toggleCollapse()">
+            <i class="tabler--menu"></i>
+        </button>
     </div>
     <nav class="--hide-scroll">
         <ul>
-            <li *ngFor="let data of navData">
-                <a href="index.html" [routerLink]="data.route">
+            <li routerLinkActive="active" *ngFor="let data of navData">
+                <a href="#" [routerLink]="data.route" [routerLinkActiveOptions]="{exact: true}">
                     <i [class]="data.icon"></i>
                     <span *ngIf="isCollapsed">{{data.label}}</span>
                 </a>

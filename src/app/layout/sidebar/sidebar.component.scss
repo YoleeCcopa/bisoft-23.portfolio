@@ -22,6 +22,26 @@
     font-family: var(--font-spectral);
 }
 
+.--user-profile button {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    margin-left: 0.5rem;
+}
+
+.--user-profile button:hover,
+.--user-profile button:focus {
+    background-color: var(--color-beige);
+    color: var(--color-old-gold);
+    border-radius: 50%;
+    outline: none;
+}
+
 .--user-avatar {
     width: 3.5rem;
     height: 3.5rem;
@@ -39,15 +59,11 @@
     width: 100%;
     text-transform: capitalize;
     cursor: default;
-    min-width: 10rem;
+    min-width: 8rem;
 }
 
 .--user-details p {
     font-size: 1.5rem;
-}
-
-.--user-details span {
-    font-size: 0.8rem;
 }
 
 nav {
@@ -104,7 +120,7 @@ nav li span {
 
 /* #38cdfb */
 
-nav li.--current-page a {
+nav li.active a {
     background-color: var(--color-cadet-grey);
     color: var(--color-dark-jungle-green);
     text-decoration: underline;

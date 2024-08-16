@@ -1,8 +1,3 @@
-<invok-header></invok-header>
-<invok-sidebar></invok-sidebar>
+<invok-sidebar (onToggleSidenav)="onToggleSidenav($event)"></invok-sidebar>
 
-<main>
-    a
-</main>
-
-<invok-footer></invok-footer>
+<invok-body [collapsed]="isSidenavCollapsed" [screenWidth]="screenWidth"></invok-body>

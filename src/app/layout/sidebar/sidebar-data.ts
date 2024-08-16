@@ -1,17 +1,22 @@
 export const navData = [
     {
-        icon: 'heroicons--home',
+        icon: 'tabler--home',
         label: 'inicio',
-        route: 'home'
+        route: ''
     },
     {
-        icon: 'heroicons--cpu-chip',
+        icon: 'tabler--user-scan',
         label: 'acerca de mi',
-        route: 'home'
+        route: 'about-me'
     },
     {
-        icon: 'heroicons--login',
+        icon: 'tabler--code',
         label: 'proyectos',
-        route: 'home'
+        route: 'proyect'
+    },
+    {
+        icon: 'tabler--school',
+        label: 'habilidades',
+        route: 'skill'
     }
 ]
