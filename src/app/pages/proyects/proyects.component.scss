@@ -1,0 +1,37 @@
+h2 {
+    font-family: var(--font-domine);
+    margin-bottom: 1rem;
+}
+
+.sct-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.sct-card .proyect-card {
+    max-width: 30vw;
+    min-width: 30rem;
+    background-color: var(--color-midnight-green);
+    color: var(--color-beige);
+    padding: 2rem;
+    text-align: center;
+    height: auto;
+}
+
+.proyect-card .card-img {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: var(--color-old-gold);
+}
+
+.proyect-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.proyect-card a {
+    padding: 1rem;
+    color: var(--color-old-gold);
+}
